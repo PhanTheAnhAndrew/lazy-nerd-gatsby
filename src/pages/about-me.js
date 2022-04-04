@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import styled from 'styled-components';
 import { useSiteMetadata, useTagList } from '../hooks';
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Info from '../components/Info';
 import CustomLink from '../components/CustomLink';
 

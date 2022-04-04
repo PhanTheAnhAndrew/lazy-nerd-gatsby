@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { useSiteMetadata } from '../hooks';
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Info from '../components/Info';
 import ViewMore from '../components/ViewMore';
 import Thumbnail from '../components/Thumbnail';

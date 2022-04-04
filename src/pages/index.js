@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { useSiteMetadata, useTagList } from '../hooks';
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Info from '../components/Info';
 import ViewMore from '../components/ViewMore';
 import Thumbnail from '../components/Thumbnail'; 
