@@ -1,0 +1,7 @@
+@import '../../assets/scss/mixins';
+
+.svg {
+    &--color-base {
+        fill: $color-base;
+    }
+}

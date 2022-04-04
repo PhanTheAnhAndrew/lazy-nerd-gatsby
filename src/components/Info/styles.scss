@@ -1,0 +1,19 @@
+@import '../../assets/scss/mixins';
+
+.info {
+    gap: 8px;
+    @include margin-bottom(1.5);
+    &__title {
+        &::before {
+           content: '→';
+           color: $color-base;
+           @include margin-right(0.5); 
+        }
+
+        &::after {
+            content: '()';
+            color: $color-base;
+            @include margin-left(0.25); 
+        }
+    }
+}

@@ -1,21 +1,12 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
-
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    # create a new Gatsby site using the hello-world starter
+    gatsby new lazy-nerds-gatsby https://github.com/gatsbyjs/gatsby-starter-hello-world
     ```
 
 2.  **Start developing.**
@@ -23,32 +14,47 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    cd lazy-nerds-gatsby-v2/
+    gatsby develop
     ```
 
-3.  **Open the code and start customizing!**
+3.  **Addition plugins and packages.**
 
-    Your site is now running at http://localhost:8000!
+    <b>Styled-component</b>: Custom element's style
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    ```shell
+    npm install gatsby-plugin-styled-components styled-components babel-plugin-styled-components
+    ``` 
 
-4.  **Learn more**
+    <b>classnames</b>: A simple Javascript utility for conditionally joining classNames together
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    ```shell
+    npm install classnames
+    ```
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    <b>gatsby-plugin-feed</b>: Create an RSS feed (or multiple feeds) for your Gatsby site.
+    ```shell
+    npm i gatsby-plugin-feed
+    ```
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    <b>lodash</b>: javascript utilities.
+    ```shell
+    npm i lodash
+    ```
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    <b>mdx, optimize images, etc...</b>
+    ```shell
+    npm install gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    https://www.gatsbyjs.com/docs/tutorial/part-5/
+    ```
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    <b>Optimize images in markdown</b>
+    ```shell
+    npm install gatsby-remark-images gatsby-plugin-sharp
+    ```
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+    <b>Adds GitHub-style hover links to headers in your markdown files when they’re rendered.</b>
+    ```shell
+    npm install gatsby-remark-autolink-headers
+    ```

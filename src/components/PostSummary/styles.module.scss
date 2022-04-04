@@ -1,0 +1,12 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.post-summary {
+    &__info {
+        color: $link-color;
+
+        .first-col {
+            gap: 12px;
+        }
+    }
+}

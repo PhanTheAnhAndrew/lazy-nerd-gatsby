@@ -1,0 +1,22 @@
+@import '../../assets/scss/mixins';
+
+.tag {
+    color: $color-primary;
+    border: 1px solid $border-color;
+
+    font-family: $typographic-font-family-bold;
+    font-size: $typographic-small-font-size;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    border-width: 1px;
+    
+    @include padding(0.25, 0.5);
+    @include margin(0, 0.5, 0.5, 0);
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}

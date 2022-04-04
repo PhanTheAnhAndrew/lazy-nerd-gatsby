@@ -1,0 +1,36 @@
+// Colors
+$color-base: #FFFFFF;
+$color-primary: #F056C7;
+$color-secondary: #58E6D9;
+
+$btn-color: #FF5E5B;
+$link-color: #8B87EA;
+
+$bg-color: #131127;
+$bg-color-secondary: #2D2A55;
+$border-color: $color-primary;
+
+$divide-line-color: #232140;
+
+// Typographic
+$typographic-font-family: Inconsolata, monospace, Roboto;
+$typographic-font-family-bold: Inconsolata-Bold, monospace, Roboto;
+
+$typographic-root-font-size: 100;
+$typographic-base-font-size: 16px;
+$typographic-small-font-size: 14px;
+
+$typographic-base-line-height: 1.625;
+
+// $typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
+$typographic-leading: 16;
+
+// Buttons
+$button-height: 35px;
+$button-border-radius: 20px;
+
+// Layout
+$layout-breakpoint-sm: 685px;
+$layout-breakpoint-md: 960px;
+$layout-breakpoint-lg: 1100px;
+

@@ -1,0 +1,23 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.form-input {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: block;
+    width: 100%;
+    
+    @include padding-equal(0.5);
+    @include margin-bottom(2);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: inherit;
+    line-height: inherit;
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+    color: inherit;
+    background-color: transparent;
+}

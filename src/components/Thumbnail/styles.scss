@@ -1,0 +1,54 @@
+@import '../../assets/scss/mixins';
+
+// Blogs
+.thumbnail {
+    background-color: $bg-color-secondary;
+    cursor: pointer;
+    transition: 0.5s;
+    flex: 1 1 auto;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    &--default-padding {
+        @include padding-equal(1);
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    &__image {
+        @include margin(0, 0);
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        gap: 8px;
+        flex: 1 1 auto;
+    }
+
+    &__title {
+        text-transform: capitalize;
+        color: $color-base;
+
+        @include margin(1, 0);
+    }
+
+    &__date {
+        color: $color-secondary;
+    }
+
+    @include breakpoint-md {
+        width: 100%;
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}

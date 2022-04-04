@@ -1,0 +1,8 @@
+@import '../../assets/scss/mixins';
+
+.alert {
+    @include padding-equal(0.5);
+    &--red {
+        background-color: #FF4343;
+    }
+}

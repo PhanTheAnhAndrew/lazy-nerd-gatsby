@@ -1,0 +1,198 @@
+/** 
+ * Generic
+ */
+html {
+    font-size: $typographic-root-font-size;
+    height: 100vh;
+    background-color: $bg-color;
+}
+  
+body {
+    margin: 0 0 0 calc(100vw - 100%);
+    font-family: $typographic-font-family;
+    color: $color-base;
+    line-height: $typographic-base-line-height;
+    font-size: $typographic-base-font-size;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $typographic-font-family-bold;
+    color: $color-primary;
+}
+  
+h1 {
+    font-size: $typographic-base-font-size * 1.75;
+    @include margin-top(0);
+    @include margin-bottom(1);
+}  
+  
+h2 {
+    font-size: $typographic-base-font-size * 1.125;
+    @include margin-top(0);
+    @include margin-bottom(1);
+}
+  
+img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    margin: inherit auto;
+}
+
+hr {
+    border: none;
+    @include margin-top(0);
+    @include margin-bottom(1);
+}
+  
+a {
+    color: $link-color;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-base;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+  
+b,
+strong {
+    font-weight: 700;
+}
+  
+p {
+    line-height: $typographic-base-line-height;
+    @include margin-bottom(1.5);
+}
+  
+figure {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+figcaption {
+    @include line-height(.75);
+    @include margin-top(.25);
+    color: $color-base;
+    font-size: $typographic-small-font-size;
+    font-style: italic;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.color-link {
+    color: $link-color;
+}
+
+.container {
+    outline: none;
+    min-height: 100%;
+    height: auto;
+}
+
+.full-width {
+    width: calc(100% - 200px);
+
+    @include breakpoint-md {
+        width: 100%;
+    }
+}
+
+.flex {
+    display: flex;
+
+    &--col-2 {
+        width: 50%;
+
+        @include breakpoint-md {
+            width: 100%;
+        }
+    }
+}
+
+.flex-column {
+    flex-direction: column;
+
+    &--md {
+        gap: 16px;
+        @include breakpoint-md {
+            flex-direction: column;
+        }
+    }
+}
+
+.flex-center-row {
+    align-items: center;
+
+    &--lg {
+        @include breakpoint-md {
+            align-items: flex-start;
+        }
+    }
+}
+
+.flex-center-column {
+    justify-content: center;
+}
+
+.flex-space-between-column {
+    justify-content: space-between;
+}
+
+.flex-right-column {
+    justify-content: flex-end;
+}
+
+.less-or-equal {
+    &__md {
+        display: none;
+        @include breakpoint-md {
+            display: block !important;
+        }
+    }
+}
+
+.temp-left {
+    width: 200px;
+
+    @include breakpoint-md {
+        display: none;
+    }
+}
+
+.mt-1 {
+    @include margin-top(1);
+}
+
+.margin-top-2 {
+    @include margin-top(2);
+}
+
+.ml-1 {
+    @include margin-left(1);
+}
+
+.mb-0 {
+    @include margin-bottom(0);
+}
+
+.mb-1 {
+    @include margin-bottom(1);
+}

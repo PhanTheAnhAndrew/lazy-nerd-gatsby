@@ -1,0 +1,76 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.overlay-layout {
+    position: fixed;
+    z-index: 3;
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    &__close {
+        position: absolute;
+        right: 0;
+        top: 8px;
+        background-color: transparent;
+        border: none;
+        @include margin-right(1);
+    }
+}
+
+
+// Sidebar
+.menu {
+    width: 200px;
+    height: 100%;
+
+    position: fixed;
+    z-index: 4;
+    border-right: 1px solid $divide-line-color;
+
+    background-color: $bg-color;
+    transition: 0.2s;
+
+    &--mobile {
+        left: 0 !important;
+    }
+
+    &__logo {
+        height: 47px;
+    }
+
+    &__wrapper {
+        list-style-type: none;
+        @include margin(0, 0);
+        @include padding(1, 2);
+    }
+
+    &__item {
+        text-align: right;
+        @include line-height(1.75);
+
+        &.active {
+            a {
+                color: $color-base;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &::after {
+            content: '-';
+            padding-left: 8px;
+        }
+    }
+
+    @include breakpoint-md {
+        left: -200px;
+    }
+}
